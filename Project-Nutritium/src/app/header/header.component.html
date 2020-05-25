@@ -1,1 +1,20 @@
-<p>header works!</p>
+<mat-toolbar color="primary" class="navbar">
+    <mat-toolbar-row>
+        <div class="col-1" style="display: flex; flex-direction: row-reverse;">
+            <button mat-icon-button (click)="onToggleSidenav()" *ngIf="logedUser != null">
+                <mat-icon>menu</mat-icon>
+            </button>
+            &nbsp;
+        </div>
+
+        <div class="col-3">
+           Health Planner + 
+        </div>
+        <div class="col-7" *ngIf="logedUser != null" style="display: flex; flex-direction: row-reverse;">
+            <ul fxLayout fxLayoutGap="15px" class="navigation-items" style="padding-top: 10px;">
+                <a mat-button (click)="route('home')"><mat-icon>home</mat-icon>Home</a>
+                <a mat-button (click)="logout()"><mat-icon>power_settings_new</mat-icon>Logout</a>
+            </ul>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
