@@ -1,0 +1,17 @@
+.login-card {
+    width: 90%
+  }
+  mat-card-title{
+      font-size: 250%;
+      padding-top: 10%;
+  }
+  .login-form {
+    width: 80%;
+  }
+  mat-form-field{
+      width: 70%;
+      margin-left: 5%;
+  }
+  mat-label{
+      font-size: 125%;
+  }
